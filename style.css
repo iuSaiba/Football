@@ -38,3 +38,29 @@ body{
     width: 700px;
     height: 600px;
 }
+.player-area{
+    padding: 70px 0;
+}
+.players{
+    display: flex;
+}
+.player{
+    width: 530px;
+    border-radius: 12px;
+    margin: 0 1% 27px 1%;
+    box-shadow: 2px 2px 20px #bdc3c7;
+    background-color: #fff;
+    margin: 0 1% 27px 1%;
+}
+.player img{
+    width: 350px;
+    height: 256px;
+    border-radius: 12px;
+    margin: 15px;
+}
+.player h2{
+    font-size: 28px;
+}
+.player-info{
+   margin: 0 15px;
+}
