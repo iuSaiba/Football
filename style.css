@@ -7,13 +7,6 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
-h1{
-    font-size: 50px;
-    color: #575757;
-}
-h2{
-    font-size: 40px;
-}
 .f{
     text-align: center;
 }
@@ -29,9 +22,8 @@ img{
 ----------=----------=----------=*/
 .banner{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0 50px;
-    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 50px; 
     background-color: #2D25A0;
 }
 .banner img{
@@ -42,14 +34,14 @@ img{
     margin-top: 5px;
 }
 .banner-info h2{
-    width: 485px;
-    height: 230px;
+    width: fit-content;
+    height: fit-content;
     font-weight: bold;
     font-size: 64px;
 }
 .banner-info{
     position: relative;
-    left: 20%;
+    left: 5%;
     font-weight: 900;
     color: #ffffff;
 
@@ -91,6 +83,9 @@ img{
     width: 50%;
     
 }
+.flex{
+    display: flex;
+}
 /*----------=----------=----------=
  ----------=  Button  ----------=
 ----------=----------=----------=*/
@@ -102,15 +97,20 @@ img{
     font-weight: 700;
     color: white;
 }
-/*----------=----------=------------=
-----------= Media queries ----------=
-----------=----------=------------=*/
+/* -----------------------
+    Media queries 
+-------------------------*/
+
+/* Mobile device */
 @media only screen and (max-width: 688px){
     .banner{
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
     .players{
-        display: flex;
+        display: grid;
         grid-template-columns: repeat(1, 1fr); 
     }
+
+    
 }
