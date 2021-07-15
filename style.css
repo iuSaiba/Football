@@ -1,0 +1,116 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/*----------=----------=----------=
+ ----------=  CSS  ----------=
+----------=----------=----------=*/
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+h1{
+    font-size: 50px;
+    color: #575757;
+}
+h2{
+    font-size: 40px;
+}
+.f{
+    text-align: center;
+}
+.title{
+    color: #ff0000;
+    text-align: center;
+}
+img{
+    border-radius: 20px;
+}
+/*----------=----------=----------=
+ ----------=  Banner  ----------=
+----------=----------=----------=*/
+.banner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 50px;
+    width: 90%;
+    background-color: #2D25A0;
+}
+.banner img{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    left: 10%;
+    margin-top: 5px;
+}
+.banner-info h2{
+    width: 485px;
+    height: 230px;
+    font-weight: bold;
+    font-size: 64px;
+}
+.banner-info{
+    position: relative;
+    left: 20%;
+    font-weight: 900;
+    color: #ffffff;
+
+}
+.banner-img{
+    padding-left: 10px;
+}
+/*----------=----------=----------=
+ ----------=  Player  ----------=
+----------=----------=----------=*/
+.player{
+    width: 300px;
+    margin: 50px auto;
+    box-shadow: 5px 5px 20px #808080;
+    padding: 30px;
+    border-radius: 35px;
+}
+.player img{
+    width: 300px;
+    height: 200px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.player p{ 
+    width: 300px;
+
+}
+/*----------=----------=----------=
+ ----------=  Footer  ----------=
+----------=----------=----------=*/
+.Footer{
+    text-align: center;
+    padding: 40px;
+}
+.Footer img{
+    height: 50%;
+    width: 50%;
+    
+}
+/*----------=----------=----------=
+ ----------=  Button  ----------=
+----------=----------=----------=*/
+.button{
+    text-decoration: none;
+    background-color: #ff00aa;
+    padding: 10px 40px;    
+    border-radius: 0 15px 0 15px;
+    font-weight: 700;
+    color: white;
+}
+/*----------=----------=------------=
+----------= Media queries ----------=
+----------=----------=------------=*/
+@media only screen and (max-width: 688px){
+    .banner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .players{
+        display: flex;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
